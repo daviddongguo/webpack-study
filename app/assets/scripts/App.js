@@ -1,9 +1,19 @@
 import 'lazysizes';
+// React Related Code Goes Here
+import React from 'react';
+import ReactDOM from 'react-dom';
 import '../styles/styles.css';
 import ClientArea from './modules/ClientArea';
 import MobileMenu from './modules/MobileMenu';
+// Import React components that we created
+import MyAmazingComponent from './modules/MyAmazingComponent';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
+
+ReactDOM.render(
+	<MyAmazingComponent />,
+	document.querySelector('#my-react-example')
+);
 
 new ClientArea();
 new StickyHeader();
