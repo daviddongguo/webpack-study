@@ -1,5 +1,5 @@
 exports.handler = function (event, context, callback) {
-	let body = {};
+	const body = {};
 	if (event.body) {
 		body = JSON.parse(event.body);
 	}
@@ -7,11 +7,11 @@ exports.handler = function (event, context, callback) {
 	if ((body.password = '123')) {
 		callback(null, {
 			stausCode: 200,
-			body: `password(${context.name}) is correct`,
+			body: `password(${body.password}) is correct`,
 		});
 	}
 	callback(null, {
-		stausCode: 400,
-		body: `password(${context.name}) is wrong`,
+		stausCode: 401,
+		body: `password(${body.password}) is wrong`,
 	});
 };
