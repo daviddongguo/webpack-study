@@ -5,9 +5,7 @@ class ClientArea {
 		this.injectHTML();
 		this.form = document.querySelector('.client-area__form');
 		this.field = document.querySelector('.client-area__input');
-		this.contentArea = document.querySelector(
-			'.client-area__client-area__content-area'
-		);
+		this.contentArea = document.querySelector('.client-area__content-area');
 		this.events();
 	}
 
