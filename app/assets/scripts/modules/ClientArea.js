@@ -19,12 +19,12 @@ class ClientArea {
 		Axios.post('https://www.david-wu.xyz/.netlify/functions/secret-area', {
 			password: this.field.value,
 		})
-			.then((res) => {
-				this.form.remove();
+			.then((response) => {
+				// this.form.remove();
 				this.contentArea.innerHTML = response.data;
 			})
-			.catch((err) => {
-				this.contentArea.innerHTML = `<p> try again </p>`;
+			.catch((error) => {
+				this.contentArea.innerHTML = `<p class="client-area__error">${error.data}</p>`;
 				this.field.value = '';
 				this.field.focus();
 			});
