@@ -37,6 +37,7 @@ exports.handler = function (event, context, callback) {
 
 	callback(null, {
 		stausCode: 401,
+		headers,
 		body: `password(${body.password}) is wrong`,
 	});
 };
