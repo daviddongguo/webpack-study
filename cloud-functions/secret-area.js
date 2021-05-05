@@ -20,6 +20,7 @@ exports.handler = function (event, context, callback) {
 	if (!event.body) {
 		callback(null, {
 			stausCode: 401,
+			headers,
 			body: `nothing is transmited`,
 		});
 	}
@@ -29,6 +30,7 @@ exports.handler = function (event, context, callback) {
 	if (body.password === '123') {
 		callback(null, {
 			stausCode: 200,
+			headers,
 			body: `password(${body.password}) is correct`,
 		});
 	}
