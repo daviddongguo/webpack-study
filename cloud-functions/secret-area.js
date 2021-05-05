@@ -11,7 +11,7 @@ exports.handler = function (event, context, callback) {
 		body = JSON.parse(event.body);
 	}
 
-	if ((body.password = '123')) {
+	if (body.password === '123') {
 		callback(null, {
 			stausCode: 200,
 			body: `password(${body.password}) is correct`,
