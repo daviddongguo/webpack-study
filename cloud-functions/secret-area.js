@@ -1,5 +1,12 @@
 exports.handler = function (event, context, callback) {
-	const body = {};
+	const secretContent = (
+		<div>
+			<h1>Secret Content</h1>
+			<p>hi, there!</p>
+		</div>
+	);
+
+	let body = {};
 	if (event.body) {
 		body = JSON.parse(event.body);
 	}
