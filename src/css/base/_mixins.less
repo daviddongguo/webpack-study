@@ -1,0 +1,22 @@
+.atSmall {
+  @media (min-width: 530px) {
+  }
+}
+
+.atMedium {
+  @media (min-width: 800px) {
+  }
+}
+
+.atLarge {
+  @media (min-width: 1010px) {
+  }
+}
+
+.clear-fix() {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}

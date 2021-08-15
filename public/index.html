@@ -52,32 +52,28 @@
     <div class="large-hero">
       <picture>
         <source
+          media="(min-width: 1380px)"
           srcset="
             assets/images/hero--large.jpg        1920w,
             assets/images/hero--large-hi-dpi.jpg 3840w
-          <!-- "
-          --
+          "
         />
-        media="(min-width: 1380px)" />
         <source
+          media="(min-width: 990px)"
           srcset="
             assets/images/hero--medium.jpg        1380w,
             assets/images/hero--medium-hi-dpi.jpg 2760w
           "
-          media="(min-width: 990px)"
         />
         <source
+          media="(min-width: 640px)"
           srcset="
             assets/images/hero--small.jpg         990w,
             assets/images/hero--small-hi-dpi.jpg 1980w
           "
-          media="(min-width: 640px)"
         />
         <img
-          srcset="
-            assets/images/hero--smaller.jpg         640w,
-            assets/images/hero--smaller-hi-dpi.jpg 1280w
-          "
+          src="assets/images/hero--smaller.jpg"
           alt="Coastal view of ocean and mountains"
           class="large-hero__image"
         />
@@ -106,12 +102,22 @@
     >
       <div class="wrapper">
         <h2
-          class="headline headline--centered headline--light headline--b-margin-small"
+          class="
+            headline headline--centered headline--light headline--b-margin-small
+          "
         >
           The first trip we planned <strong>was our own.</strong>
         </h2>
         <h3
-          class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large"
+          class="
+            headline
+            headline--centered
+            headline--orange
+            headline--small
+            headline--narrow
+            headline--light
+            headline--b-margin-large
+          "
         >
           Ever since, we&rsquo;ve been working to make travel
           <strong>better for everyone.</strong>
@@ -121,29 +127,44 @@
           <img
             class="lazyload"
             sizes="(min-width: 970px) 976px, 100vw"
-            data-srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w"
+            srcset="
+              assets/images/first-trip-low-res.jpg  565w,
+              assets/images/first-trip.jpg          976w,
+              assets/images/first-trip-hi-dpi.jpg  1952w
+            "
             alt="Couple walking down a street."
           />
         </div>
 
         <div class="row row--gutters">
           <div
-            class="row__medium-4 row__medium-4--larger row__b-margin-until-medium"
+            class="
+              row__medium-4 row__medium-4--larger row__b-margin-until-medium
+            "
           >
             <picture>
               <source
                 sizes="404px"
-                data-srcset="assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w"
+                srcset="
+                  assets/images/our-start.jpg        404w,
+                  assets/images/our-start-hi-dpi.jpg 808w
+                "
                 media="(min-width: 1020px)"
               />
               <source
                 sizes="320px"
-                data-srcset="assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w"
+                srcset="
+                  assets/images/our-start-portrait.jpg        382w,
+                  assets/images/our-start-portrait-hi-dpi.jpg 764w
+                "
                 media="(min-width: 800px)"
               />
               <img
                 class="lazyload"
-                data-srcset="assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w"
+                srcset="
+                  assets/images/our-start-landscape.jpg         800w,
+                  assets/images/our-start-landscape-hi-dpi.jpg 1600w
+                "
                 alt="Our founder, Jane Doe"
               />
             </picture>
@@ -260,7 +281,11 @@
 
     <div
       id="testimonials"
-      class="page-section page-section--no-b-padding-until-large page-section--testimonials"
+      class="
+        page-section
+        page-section--no-b-padding-until-large
+        page-section--testimonials
+      "
       data-matching-link="#testimonials-link"
     >
       <div class="wrapper wrapper--no-padding-until-large">
@@ -273,7 +298,14 @@
         </h2>
 
         <div
-          class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container"
+          class="
+            row
+            row--gutters
+            row--equal-height-at-large
+            row--gutters-small
+            row--t-padding
+            generic-content-container
+          "
         >
           <div class="row__large-4">
             <div class="testimonial">
@@ -281,7 +313,10 @@
                 <img
                   class="lazyload"
                   sizes="160px"
-                  data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w"
+                  srcset="
+                    assets/images/testimonial-jane.jpg        160w,
+                    assets/images/testimonial-jane-hi-dpi.jpg 320w
+                  "
                   alt="Jane Doe"
                 />
               </div>
@@ -304,7 +339,10 @@
                 <img
                   class="lazyload"
                   sizes="160px"
-                  data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w"
+                  srcset="
+                    assets/images/testimonial-john.jpg        160w,
+                    assets/images/testimonial-john-hi-dpi.jpg 320w
+                  "
                   alt="John Smith"
                 />
               </div>
@@ -326,7 +364,10 @@
                 <img
                   class="lazyload"
                   sizes="160px"
-                  data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w"
+                  srcset="
+                    assets/images/testimonial-cat.jpg        160w,
+                    assets/images/testimonial-cat-hi-dpi.jpg 320w
+                  "
                   alt="Cat McKitty"
                 />
               </div>

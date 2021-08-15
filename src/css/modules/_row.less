@@ -1,6 +1,5 @@
 .row {
-
-  @mixin clearfix;
+  .clear-fix();
 
   &--t-padding {
     padding-top: 80px;
@@ -34,8 +33,7 @@
     margin-bottom: 1rem;
   }
 
-  @mixin atMedium {
-
+  .atMedium {
     &__b-margin-until-medium {
       margin-bottom: 0;
     }
@@ -62,11 +60,9 @@
     &__medium-8--smaller {
       width: 63%;
     }
-
   }
 
-  @mixin atLarge {
-
+  .atLarge {
     &__b-margin-until-large {
       margin-bottom: 0;
     }
@@ -93,12 +89,11 @@
     &__large-8--smaller {
       width: 63%;
     }
-
   }
-  
+
   /* Begin Equal Height Rules */
   &--equal-height-at-medium {
-    @mixin atMedium {
+    .atMedium {
       display: flex;
     }
 
@@ -106,11 +101,10 @@
       float: none;
       display: flex;
     }
-
   }
 
   &--equal-height-at-large {
-    @mixin atLarge {
+    .atLarge {
       display: flex;
     }
 
@@ -118,7 +112,5 @@
       float: none;
       display: flex;
     }
-
   }
-
 }

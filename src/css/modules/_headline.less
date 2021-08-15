@@ -1,9 +1,9 @@
 .headline {
   font-size: 1.9rem;
   font-weight: 300;
-  color: $mainBlue;
+  color: @mainBlue;
 
-  @mixin atSmall {
+  .atSmall {
     font-size: 2.875rem;
   }
 
@@ -12,12 +12,12 @@
   }
 
   &--orange {
-    color: $mainOrange;
+    color: @mainOrange;
   }
 
   &--small {
     font-size: 1.2rem;
-    @mixin atSmall {
+    .atSmall {
       font-size: 1.875rem;
     }
   }
@@ -37,7 +37,7 @@
   }
 
   &--b-margin-small {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 
   &--b-margin-large {
