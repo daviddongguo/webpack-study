@@ -1,14 +1,10 @@
 .primary-nav {
   padding-top: 10px;
 
-  .atMedium {
-    padding-top: 0;
-  }
+  .atMedium({padding-top: 0;});
 
   &--pull-right {
-    .atMedium {
-      float: right;
-    }
+    .atMedium({float: right;});
   }
 
   ul {
@@ -21,18 +17,12 @@
     list-style: none;
     display: inline-block;
     padding-right: 7px;
-    .atMedium {
-      padding-right: 20px;
-      float: left;
-      display: block;
-    }
+    .atMedium({padding-right: 20px; float: left; display: block;});
   }
 
   li:last-child {
     padding-right: 0;
-    .atMedium {
-      padding-right: 20px;
-    }
+    .atMedium({padding-right: 20px;});
   }
 
   a {
@@ -44,14 +34,9 @@
     font-size: 0.8rem;
     background-color: rgba(47, 85, 114, 0.5);
 
-    .atMedium {
-      font-size: 1rem;
-      padding: 12px 0;
-      background-color: transparent;
-
-      &.is-current-link {
-        color: #fabb69;
-      }
-    }
+    .atMedium(
+      {font-size: 1rem; padding: 12px 0; background-color: transparent; &.is-current-link {color:
+        #fabb69;}}
+    );
   }
 }

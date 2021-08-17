@@ -3,11 +3,9 @@
   font-weight: 300;
   color: @mainBlue;
 
-  .atSmall {
+  .atSmall({
     font-size: 2.875rem;
-  }
-
-  &--centered {
+  }) &--centered {
     text-align: center;
   }
 
@@ -17,9 +15,7 @@
 
   &--small {
     font-size: 1.2rem;
-    .atSmall {
-      font-size: 1.875rem;
-    }
+    .atSmall({font-size: 1.875rem;});
   }
 
   &--narrow {

@@ -1,24 +1,18 @@
 .page-section {
   padding: 1.2rem 0;
 
-  .atMedium {
+  .atMedium({
     padding: 4.5rem 0;
-  }
-
-  &--no-b-padding-until-medium {
+  }) &--no-b-padding-until-medium {
     padding-bottom: 0;
 
-    .atMedium {
-      padding-bottom: 4.5rem;
-    }
+    .atMedium({padding-bottom: 4.5rem;});
   }
 
   &--no-b-padding-until-large {
     padding-bottom: 0;
 
-    .atLarge {
-      padding-bottom: 4.5rem;
-    }
+    .atLarge({padding-bottom: 4.5rem;});
   }
 
   &--blue {
@@ -29,10 +23,9 @@
   &--testimonials {
     background-color: #e0e6ef;
 
-    .atLarge {
-      background: url('/public/assets/images/testimonials-bg.jpg') top center
-        no-repeat;
-      background-size: cover;
-    }
+    .atLarge(
+      {background: url('/public/assets/images/testimonials-bg.jpg') top center no-repeat; background-size:
+        cover;}
+    );
   }
 }

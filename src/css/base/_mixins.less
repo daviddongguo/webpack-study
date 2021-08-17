@@ -1,15 +1,18 @@
-.atSmall {
+.atSmall(@rules) {
   @media (min-width: 530px) {
+    @rules();
   }
 }
 
-.atMedium {
+.atMedium(@rules) {
   @media (min-width: 800px) {
+    @rules();
   }
 }
 
-.atLarge {
+.atLarge(@rules) {
   @media (min-width: 1010px) {
+    @rules();
   }
 }
 
