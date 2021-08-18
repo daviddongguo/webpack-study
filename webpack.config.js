@@ -98,7 +98,7 @@ let config = {
   output: {
     filename: "assets/js/[name].[contenthash:8].js",
     path: pathResolve("./docs"),
-    publicPath: "/",
+    publicPath: "/webpack-study/",
     assetModuleFilename: "assets/images/[hash][ext][query]",
   },
   plugins: [

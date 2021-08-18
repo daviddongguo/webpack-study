@@ -1,5 +1,6 @@
 {
   "name": "travel-site",
+  "homepage": "https://daviddongguo.github.io/webpack-study/",
   "version": "1.0.0",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve",
