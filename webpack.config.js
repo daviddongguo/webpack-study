@@ -97,7 +97,7 @@ let config = {
   mode: isProduction ? "production" : "development",
   output: {
     filename: "assets/js/[name].[contenthash:8].js",
-    path: pathResolve("./dist"),
+    path: pathResolve("./docs"),
     publicPath: "/",
     assetModuleFilename: "assets/images/[hash][ext][query]",
   },
@@ -124,7 +124,7 @@ let config = {
     ],
   },
   devServer: {
-    contentBase: pathResolve("dist"),
+    contentBase: pathResolve("docs"),
     port: 3088,
     // open: true,
     historyApiFallback: true,
