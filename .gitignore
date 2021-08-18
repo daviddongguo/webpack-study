@@ -350,5 +350,4 @@ MigrationBackup/
 .ionide/
 
 docs/
-dist/
 .temp_cache/
